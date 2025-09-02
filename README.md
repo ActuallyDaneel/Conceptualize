@@ -24,19 +24,12 @@ A tool for analyzing and steering concept representations in large language mode
 pip install torch transformers huggingface_hub numpy tqdm
 ```
 
-2. Set up your Hugging Face token as an environment variable:
-
-On Windows (PowerShell):
-```powershell
-$env:HUGGING_FACE_TOKEN="your_token_here"
+2. Create a `.env` file in the project root directory with your Hugging Face token:
+```plaintext
+HUGGING_FACE_TOKEN="your_token_here"
 ```
 
-On Linux/MacOS:
-```bash
-export HUGGING_FACE_TOKEN="your_token_here"
-```
-
-For permanent setup, add the environment variable to your system settings.
+The `.env` file is already in `.gitignore` and won't be pushed to the repository.
 
 ## Usage
 

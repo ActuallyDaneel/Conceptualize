@@ -20,10 +20,14 @@ import math
 class ConceptIsolator:
     def __init__(self, model_name: str = "Qwen/Qwen3-4B-Instruct-2507"):
         import os
+        from dotenv import load_dotenv
+        
+        # Load environment variables from .env file
+        load_dotenv()
         
         hf_token = os.getenv('HUGGING_FACE_TOKEN')
         if not hf_token:
-            raise ValueError("HUGGING_FACE_TOKEN environment variable is not set")
+            raise ValueError("HUGGING_FACE_TOKEN not found in .env file")
         login(hf_token)
         
         if not torch.cuda.is_available():
