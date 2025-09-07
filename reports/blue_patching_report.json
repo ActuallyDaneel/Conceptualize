@@ -1,0 +1,420 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "target": "blue",
+    "negatives": [
+      "red",
+      "green",
+      "yellow",
+      "purple",
+      "orange",
+      "brown"
+    ],
+    "token_index_strategy": "auto",
+    "layers": [
+      16,
+      28
+    ],
+    "components": [
+      "attn",
+      "mlp"
+    ]
+  },
+  "influence": [
+    {
+      "node": {
+        "component": "attn",
+        "layer": 26
+      },
+      "delta": 1.2832845449447632
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 27
+      },
+      "delta": 0.23095703125
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 24
+      },
+      "delta": 0.2174479216337204
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 23
+      },
+      "delta": 0.217041015625
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 26
+      },
+      "delta": 0.1935221403837204
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 25
+      },
+      "delta": 0.14990234375
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 24
+      },
+      "delta": 0.0892740860581398
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 23
+      },
+      "delta": 0.07763671875
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 25
+      },
+      "delta": 0.0576985664665699
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 16
+      },
+      "delta": -0.0498860664665699
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 22
+      },
+      "delta": 0.0465494804084301
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 21
+      },
+      "delta": 0.0435384102165699
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 21
+      },
+      "delta": -0.0376790352165699
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 20
+      },
+      "delta": 0.032958984375
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 27
+      },
+      "delta": 0.02693684957921505
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 22
+      },
+      "delta": -0.01814778707921505
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 20
+      },
+      "delta": -0.014729817397892475
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 18
+      },
+      "delta": -0.014078776352107525
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 19
+      },
+      "delta": -0.014078776352107525
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 18
+      },
+      "delta": 0.009195963852107525
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 19
+      },
+      "delta": 0.0056966147385537624
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 17
+      },
+      "delta": 0.002197265625
+    },
+    {
+      "node": {
+        "component": "mlp",
+        "layer": 17
+      },
+      "delta": -0.001953125
+    },
+    {
+      "node": {
+        "component": "attn",
+        "layer": 16
+      },
+      "delta": -0.0016276041278615594
+    }
+  ],
+  "acdc": {
+    "selected": [
+      {
+        "component": "attn",
+        "layer": 26
+      },
+      {
+        "component": "attn",
+        "layer": 24
+      },
+      {
+        "component": "attn",
+        "layer": 23
+      },
+      {
+        "component": "mlp",
+        "layer": 26
+      },
+      {
+        "component": "mlp",
+        "layer": 23
+      },
+      {
+        "component": "attn",
+        "layer": 27
+      },
+      {
+        "component": "attn",
+        "layer": 25
+      },
+      {
+        "component": "mlp",
+        "layer": 22
+      },
+      {
+        "component": "mlp",
+        "layer": 25
+      },
+      {
+        "component": "mlp",
+        "layer": 27
+      },
+      {
+        "component": "mlp",
+        "layer": 24
+      },
+      {
+        "component": "attn",
+        "layer": 22
+      },
+      {
+        "component": "mlp",
+        "layer": 19
+      },
+      {
+        "component": "attn",
+        "layer": 17
+      },
+      {
+        "component": "attn",
+        "layer": 20
+      },
+      {
+        "component": "attn",
+        "layer": 16
+      },
+      {
+        "component": "mlp",
+        "layer": 21
+      },
+      {
+        "component": "attn",
+        "layer": 21
+      },
+      {
+        "component": "attn",
+        "layer": 18
+      }
+    ],
+    "history": [
+      {
+        "node": null,
+        "patched_metric": -0.1039225235581398
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 26
+        },
+        "patched_metric": 1.1793619394302368
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 24
+        },
+        "patched_metric": 1.5183919668197632
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 23
+        },
+        "patched_metric": 1.9098306894302368
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 26
+        },
+        "patched_metric": 2.0619304180145264
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 23
+        },
+        "patched_metric": 2.1683757305145264
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 27
+        },
+        "patched_metric": 2.2596843242645264
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 25
+        },
+        "patched_metric": 2.331787109375
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 22
+        },
+        "patched_metric": 2.3905436992645264
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 25
+        },
+        "patched_metric": 2.4243977069854736
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 27
+        },
+        "patched_metric": 2.4768879413604736
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 24
+        },
+        "patched_metric": 2.5164387226104736
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 22
+        },
+        "patched_metric": 2.5348308086395264
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 19
+        },
+        "patched_metric": 2.546142578125
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 17
+        },
+        "patched_metric": 2.5631511211395264
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 20
+        },
+        "patched_metric": 2.5712890625
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 16
+        },
+        "patched_metric": 2.5810546875
+      },
+      {
+        "node": {
+          "component": "mlp",
+          "layer": 21
+        },
+        "patched_metric": 2.584716796875
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 21
+        },
+        "patched_metric": 2.588134765625
+      },
+      {
+        "node": {
+          "component": "attn",
+          "layer": 18
+        },
+        "patched_metric": 2.5947265625
+      },
+      {
+        "node": null,
+        "patched_metric": 2.5947265625
+      }
+    ],
+    "clean_metric": 3.5625813007354736,
+    "corrupted_metric": -0.1039225235581398,
+    "final_patched_metric": 2.5947265625,
+    "normalized_recovery": 0.7360278934328017
+  }
+}
